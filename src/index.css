@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Radial Gradient */
+.bg-radial {
+  background: radial-gradient(circle at center, #1c2054 0%, #000000 100%);
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; /* Fallback background for unsupported browsers */
+ /* Prevent scrolling from showing gaps */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind content but above the gradient */
+}
+
+.content-container {
+  position: relative;
+  z-index: 1; /* Content above stars */
+}
