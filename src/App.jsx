@@ -68,41 +68,88 @@ const App = () => {
                   </span>{" "}
                   to explore creative AI applications
                 </h2>
-                <p className="mt-3 leading-normal text-gray-400 text-base md:text-2xl mb-8 text-center">
+                <div className="mt-3 h-[500px] leading-normal text-gray-400 text-base md:text-2xl mb-8 text-center">
                   {/* Try exploring the creative AI applications we are building */}
-                </p>
+                </div>
               </div>
-              <div className="w-full px-4 py-12">
-                <h2 className="text-3xl md:text-6xl text-white opacity-75 font-bold leading-tight text-center mb-8">
-                  Meet Our{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-                    Team
-                  </span>
-                </h2>
-                
-                <div className="flex flex-wrap justify-center gap-8">
-                  {/* Team Member 1 */}
-                  <div className="w-64 bg-gray-900 rounded-lg p-6 transform transition duration-300 hover:scale-105">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                    <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                    <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                    <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions that make a difference.</p>
-                  </div>
-
-                  {/* Team Member 2 */}
-                  <div className="w-64 bg-gray-900 rounded-lg p-6 transform transition duration-300 hover:scale-105">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                    <h3 className="text-xl text-white font-bold text-center mb-2">Jane Smith</h3>
-                    <p className="text-gray-400 text-center mb-4">Lead Developer</p>
-                    <p className="text-gray-500 text-center text-sm">Expert in machine learning and natural language processing.</p>
-                  </div>
-
-                  {/* Team Member 3 */}
-                  <div className="w-64 bg-gray-900 rounded-lg p-6 transform transition duration-300 hover:scale-105">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                    <h3 className="text-xl text-white font-bold text-center mb-2">Mike Johnson</h3>
-                    <p className="text-gray-400 text-center mb-4">Design Lead</p>
-                    <p className="text-gray-500 text-center text-sm">Bringing creativity and user experience to the forefront of AI.</p>
+              <div className="mb-10  relative w-[70%] bg-black rounded-xl flex animate-border-2">
+                <div className="w-full px-8 pt-7 px-[-10px] ">
+                  <h2 className="text-3xl pb-10 md:text-6xl text-white opacity-75 font-bold leading-tight text-center mb-8">
+                    Meet Our Team
+                  </h2>
+                  
+                  <div className="team-slider">
+                    <div className="slide-track">
+                      {/* Team Member 1 */}
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      <div className="team-member">
+                        <div className="w-64 bg-gray-900 rounded-lg p-6">
+                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
+                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
+                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
+                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
+                        </div>
+                      </div>
+                      {/* Add all 10 team members here with the same structure */}
+                      {/* ... */}
+                      
+                      {/* Duplicate first 3 members at the end for smooth infinite loop */}
+                    </div>
                   </div>
                 </div>
               </div>

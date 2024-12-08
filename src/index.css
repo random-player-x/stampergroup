@@ -73,3 +73,69 @@ body,
   box-shadow: 0 0px 15px rgba(156, 123, 255, 0.941);
   filter: brightness(1.3);
 }
+
+.animate-border-2 {
+  position: relative;
+}
+
+.animate-border-2::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background: linear-gradient(90deg, 
+    #ff0000, /* Red */
+    #ff8000, /* Orange */
+    #ffff00, /* Yellow */
+    #00ff00, /* Green */
+    #0000ff, /* Blue */
+    #4b0082, /* Indigo */
+    #9400d3, /* Violet */
+    #ff0000  /* Red again to make the loop seamless */
+  );
+  background-size: 200% 200%;
+  border-radius: 20px;
+  z-index: -1;
+  animation: border-animation 4s linear infinite;
+  box-shadow: 0 0px 15px rgba(76, 29, 218, 0.941);
+  filter: brightness(1.5);
+}
+
+.team-slider {
+  
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.slide-track {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  animation: scroll 30s linear infinite;
+  padding: 0 1rem;
+}
+
+.team-member {
+  flex: 0 0 auto;
+  width: 256px; /* w-64 */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-256px * 4));
+  }
+}
+
+/* Optional: Pause animation on hover */
+.team-slider:hover .slide-track {
+  animation-play-state: paused;
+}

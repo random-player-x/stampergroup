@@ -31,7 +31,7 @@ const SpaceBackground = () => {
       <div
         style={{
           width: "100%",
-          height: "180%",
+          height: "250%",
           position: "absolute",
           top: 0,
           left: 0,
