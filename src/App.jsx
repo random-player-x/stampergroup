@@ -1,12 +1,15 @@
-import React from "react";
+import React, { Suspense } from "react";
 import './index.css'
-import SpaceBackground from "./Bganimation";
+
+const SpaceBackground = React.lazy(() => import('./Bganimation'));
 
 const App = () => {
   return (
     <div  style={{ width: "100vw", height: "100vh", position: "relative",  }}>
       <div className="canvas-container">
-      <SpaceBackground />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SpaceBackground />
+        </Suspense>
       </div>
       
       {/* Space Background */}
