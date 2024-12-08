@@ -53,26 +53,23 @@ const App = () => {
               <div className="flex flex-col w-full xl:w-2/5 justify-center items-center">
               <div>
                 <h1 className="text-center mb-10">
-                <a
-                  className="relative bg-black rounded-full flex items-center text-indigo-400  hover:no-underline font-bold text-4xl lg:text-8xl animate-border px-6 pb-4"
-                  href="#"
-                >
-                  stam
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-                    per.ai
-                  </span>
-                </a>
+                <div className="relative bg-black rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl  animate-border px-[200px] py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]"
+                  >
+                    <div className="absolute bg-black/60 rounded-full pb-8 flex items-center justify-center px-[34px] py-[28px]">
+                      stamper.ai
+                    </div>
+                  </div>
                 </h1>
               </div>
-                <h2 className="my-4 text-2xl md:text-4xl text-white opacity-75 font-bold leading-tight text-center">
+                <h2 className="my-4 text-2xl md:text-4xl text-gray-300 opacity-75 font-bold leading-tight text-center">
                   GenAI{" "}
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+                  <span className="bg-clip-text text-transparent bg-gray-300">
                     Lab
                   </span>{" "}
                   to explore creative AI applications
                 </h2>
                 <p className="mt-3 leading-normal text-gray-400 text-base md:text-2xl mb-8 text-center">
-                  Try exploring the creative AI applications we are building
+                  {/* Try exploring the creative AI applications we are building */}
                 </p>
               </div>
               <div className="w-full px-4 py-12">
@@ -109,7 +106,7 @@ const App = () => {
                   </div>
                 </div>
               </div>
-              <form className="bg-gray-900 w-1/2 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+              <form className="bg-gray-900 w-[65%] opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
                   <div className="mb-4">
                     <label
                       className="block text-blue-300 py-2 font-bold mb-2"
