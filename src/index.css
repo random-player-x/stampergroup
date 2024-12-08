@@ -34,3 +34,41 @@ body,
   position: relative;
   z-index: 1; /* Content above stars */
 }
+
+@keyframes border-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.animate-border {
+  position: relative;
+}
+
+.animate-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(90deg, 
+    #ff0000, /* Red */
+    #ff8000, /* Orange */
+    #ffff00, /* Yellow */
+    #00ff00, /* Green */
+    #0000ff, /* Blue */
+    #4b0082, /* Indigo */
+    #9400d3, /* Violet */
+    #ff0000  /* Red again to make the loop seamless */
+  );
+  background-size: 200% 200%;
+  border-radius: 999px;
+  z-index: -1;
+  animation: border-animation 4s linear infinite;
+  box-shadow: 0 0 15px rgba(110, 65, 246, 0.5);
+  filter: brightness(1.3);
+}

@@ -48,13 +48,13 @@ const App = () => {
             </div>
 
             {/* Main Section */}
-            <div className="container pt-24 md:pt-10 mx-auto flex flex-col items-center">
+            <div className="container pt-20 md:pt-10 mx-auto flex flex-col items-center">
               {/* Left Column */}
-              <div className="flex flex-col w-full xl:w-2/5 justify-center items-center overflow-y-hidden">
+              <div className="flex flex-col w-full xl:w-2/5 justify-center items-center">
               <div>
                 <h1 className="text-center mb-10">
                 <a
-                  className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-4xl lg:text-8xl"
+                  className="relative bg-black rounded-full flex items-center text-indigo-400  hover:no-underline font-bold text-4xl lg:text-8xl animate-border px-6 pb-4"
                   href="#"
                 >
                   stam
