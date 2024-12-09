@@ -7,8 +7,8 @@
 }
 .banner .slider{
     position: absolute;
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     top: 10%;
     left: calc(50% - 120px);
     
@@ -19,9 +19,9 @@
 }
 @keyframes autoRun{
     from{
-        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+        transform: perspective(1500px) rotateX(-15deg) rotateY(0deg);
     }to{
-        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+        transform: perspective(1500px) rotateX(-15deg) rotateY(360deg);
     }
 }
 
