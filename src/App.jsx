@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import './index.css'
-
+import SliderAnimation from './sliderAnimation';
 const SpaceBackground = React.lazy(() => import('./Bganimation'));
 
 const App = () => {
@@ -72,86 +72,11 @@ const App = () => {
                   {/* Try exploring the creative AI applications we are building */}
                 </div>
               </div>
-              <div className="mb-10  relative w-[70%] bg-black rounded-xl flex animate-border-2">
-                <div className="w-full px-8 pt-7 px-[-10px] ">
-                  <h2 className="text-3xl pb-10 md:text-6xl text-white opacity-75 font-bold leading-tight text-center mb-8">
-                    Meet Our Team
-                  </h2>
-                  
-                  <div className="team-slider">
-                    <div className="slide-track">
-                      {/* Team Member 1 */}
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      <div className="team-member">
-                        <div className="w-64 bg-gray-900 rounded-lg p-6">
-                          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-800 to-green-500 mb-4"></div>
-                          <h3 className="text-xl text-white font-bold text-center mb-2">John Doe</h3>
-                          <p className="text-gray-400 text-center mb-4">Founder & CEO</p>
-                          <p className="text-gray-500 text-center text-sm">Passionate about creating innovative AI solutions.</p>
-                        </div>
-                      </div>
-                      {/* Add all 10 team members here with the same structure */}
-                      {/* ... */}
-                      
-                      {/* Duplicate first 3 members at the end for smooth infinite loop */}
-                    </div>
-                  </div>
-                </div>
+              <div className="text-center text-gray-300 font-bold md:text-8xl mb-8">
+                Our Team
+              </div>
+              <div className="w-screen">
+              <SliderAnimation />
               </div>
               <form className="bg-gray-900 w-[65%] opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
                   <div className="mb-4">
