@@ -1,6 +1,9 @@
 import React, { Suspense } from "react";
 import './index.css'
-import SliderAnimation from './sliderAnimation';
+import SphereWithZones from './sphere';
+import stamperbanner from './stamperbanner.png'
+import stamperlogo from './logo.png'
+import TeamCarousel from './sliderAnimation';
 
 const App = () => {
   return (
@@ -37,12 +40,12 @@ const App = () => {
             <div className="container pt-20 md:pt-10 mx-auto flex flex-col items-center">
               {/* Left Column */}
               <div className="flex flex-col w-full xl:w-2/5 justify-center items-center">
-              <div>
-                <h1 className="text-center mb-10">
+              <div className="flex justify-center">
+                <h1 className="text-center mb-10 ">
                 <div className="relative bg-black rounded-full flex items-center justify-center text-gray-400 font-bold text-4xl lg:text-7xl  animate-border px-[200px] py-[60px] shadow-[inset_0_0_20px_rgba(255,255,255,0.3)]"
                   >
-                    <div className="absolute bg-black/60 rounded-full pb-8 flex items-center justify-center px-[34px] py-[28px]">
-                      stamper.ai
+                    <div style={{backgroundImage: `url(${stamperbanner})`, backgroundSize: 'cover',width: '100%', height: '100%', backgroundPosition: 'center'}} className="absolute bg-black/60 rounded-full pb-8 flex items-center justify-center px-[34px] py-[28px]">
+                      
                     </div>
                   </div>
                 </h1>
@@ -52,17 +55,18 @@ const App = () => {
                   <span className="bg-clip-text text-transparent bg-gray-300">
                     Lab
                   </span>{" "}
-                  to explore creative AI applications
+                  for creativity
                 </h2>
                 <div className="mt-3 h-[500px] leading-normal text-gray-400 text-base md:text-2xl mb-8 text-center">
                   {/* Try exploring the creative AI applications we are building */}
+                  <SphereWithZones />
                 </div>
               </div>
               <div className="text-center text-gray-300 font-bold md:text-8xl mb-8">
                 Our Team
               </div>
               <div className="w-screen">
-              <SliderAnimation />
+                <TeamCarousel />
               </div>
               <form className="bg-gray-900 w-[65%] opacity-75 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
                   <div className="mb-4">
@@ -81,10 +85,12 @@ const App = () => {
                   </div>
                   <div className="flex items-center justify-between pt-4">
                     <button
-                      className="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                      className=" bg-black text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                       type="button"
                     >
-                      Sign Up
+                      <div className="animate-border-2">
+                        Sign Up
+                      </div>
                     </button>
                   </div>
                 </form>
@@ -97,9 +103,12 @@ const App = () => {
                 
               </div>
             </div>
+            <div className="flex justify-left ml-10 mb-10">
+              <img src={stamperlogo} alt="Stamper Logo" className="w-1/6" />
+            </div>
 
             {/* Footer */}
-            <div className="w-full pt-16 pb-6 text-sm text-center fade-in">
+            <div className="w-full pb-6 text-sm text-center fade-in">
               <a
                 className="text-gray-500 no-underline hover:no-underline"
                 href="#"
